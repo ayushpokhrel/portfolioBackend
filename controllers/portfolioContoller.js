@@ -15,7 +15,7 @@ const sendEmailController = async(req, res) => {
     if (!name || !email || !msg) {
       return res.status(500).send({
         success: false,
-        message: "Please Provide All Fields",
+        message: "Please Provide All Fields..",
       });
     }
     var transport = await nodemailer.createTransport({
